@@ -1,0 +1,35 @@
+.ssilka{
+    padding-top: 20px;
+font-size: 30px;
+color: black;
+text-decoration:none;
+display: flex;
+justify-content: center;
+}
+
+.ssilka:hover,
+.ssilka:focus,
+.ssilka:active{
+transition: 0.5s;
+color: aqua;
+}
+.img{
+    padding-top: 150px;
+    width: 400px;
+    height: 600px;
+}
+
+.center{
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.textarea{
+width: 800px;
+color: black;
+font-size: 20px;
+outline: none;
+border: none;
+padding: 10px 25px;
+}
