@@ -1,0 +1,59 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.otvet{
+display: flex;
+}
+
+input{
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    padding: 10px 5px;
+border: none;
+outline: none;
+font-size: 20px;
+
+}
+.calc{
+    padding-top: 55px;
+    align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 50px;
+}
+.calculator{
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgb(238, 235, 153);
+    width: 500px;
+    gap: 10px;
+    align-items: center;
+display: flex;
+flex-direction: column;
+}
+.btns{
+display: flex;
+gap: 20px;
+}
+.znak{
+border: none;
+width: 50px;
+height: 50px;
+background-color: royalblue;
+color: white;
+font-size: 20px;
+}
+
+.submitBtn{
+border: none;
+font-size: 20px;
+    text-align: center;
+    width: 260px;
+    padding: 10px 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
