@@ -1,0 +1,69 @@
+.ssilka{
+padding: 50px;
+    font-size: 30px;
+color: black;
+text-decoration:none;
+/* width: 300px; */
+display: flex;
+justify-content: center;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+a:hover,
+a:focus,
+a:active{
+transition: 0.5s;
+color: aqua;
+}
+*{
+margin: 0;
+padding: 0;
+}
+.img{
+    width: 100%;
+    height: 100%;
+} 
+
+.center{
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+.box_list{
+    display: flex;
+    margin: 0 auto;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+}
+
+.news_card{
+    border: 1px solid black;
+    border-radius: 25px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+padding: 20px;
+}
+.namedate{
+align-items: center;
+display: flex;
+justify-content: space-between;
+}
+.opasitytext{
+opacity: 50%;
+}
+p{
+font-size: 20px;
+}
+.authorname{
+font-size: 22px;
+font-weight: bold;
+}
+
+h3{
+font-size: 32px;
+}
