@@ -1,57 +1,54 @@
 
-let news = [
-{
-    id:1,
-    name: 'Я в париже',
-    author: 'MAMA',
-    date:'01.01.2004',
-    text:'Сегодня я поехала в париж было очень весело'
-},
-{
-    id:2,
-    name: 'Новость дня',
-    author: 'папа',
-    date:'03.02.2004',
-    text:'Сегодня я поехал в париж было очень весело'
-},
-{
-    id:3,
-    name: 'Завтрашняя новость',
-    author: 'дядя',
-    date:'05.02.2004',
-    text:'затра я поеду в париж будет очень весело'
-},
-{
-    id:4,
-    name: 'Егор купил ноут',
-    author: 'Алексей',
-    date:'09.09.2023',
-    text:'поздравляем'
-},
-{
-    id:5,
-    name: 'Просто новость',
-    author: 'Просто автор',
-    date:'01.01.2004',
-    text:'просто текст'
+let news = []
+
+let titlename = document.querySelector('.titlename')
+let date = document.querySelector('.date')
+let author = document.querySelector('.author')
+let text = document.querySelector('.text')
+let id = document.querySelector('.id')
+
+let button = document.querySelector('.button')
+let newsPlace = document.querySelector('.box_list')
+
+function showNews (){
+    newsPlace.innerHTML = ''
+    news.forEach(element =>{
+            newsPlace.innerHTML += `
+            <div class="news_card">
+            <div class="namedate">
+            <h3 class="namenews">${element.name}</h3>
+            <p class="opasitytext">${element.date}</p>
+            </div>
+            <p class="text">${element.text}</p>
+            <div class="namedate">
+            <p class="authorname">${element.author}</p>
+            <p class="opasitytext">id:${element.id}</p>
+            </div>
+            </div>
+            `
+        
+    })
 }
-]
 
-newsPlace = document.querySelector('.box_list')
-news.forEach(element => {
-html = `
-<div class="news_card">
-<div class="namedate">
-<h3 class="namenews">${element.name}</h3>
-<p class="opasitytext">${element.date}</p>
-</div>
-<p class="text">${element.text}</p>
-<div class="namedate">
-<p class="authorname">${element.author}</p>
-<p class="opasitytext">id:${element.id}</p>
-</div>
-</div>
-`
+function addNews(){
+    let object = {
 
-newsPlace.innerHTML += html
-})
+        name: titlename.value,
+        date:date.value,
+        author:author.value,
+        text:text.value,
+        id:id.value,
+        }
+
+        news.push(object)
+        console.log(news)
+        titlename.value=''
+        date.value=''
+        author.value=''
+        text.value=''
+        id.value=''
+
+        showNews()
+}
+
+button.addEventListener('click',addNews)

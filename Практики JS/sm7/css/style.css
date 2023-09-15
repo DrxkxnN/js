@@ -43,7 +43,7 @@ height: 100%;
 .container{
     margin: 0 auto;
     padding: 0 auto;
-width: 1800px;
+width: 1400px;
 }
 .center{
 padding-top: 50px;
@@ -136,13 +136,15 @@ label{
 font-size: 25px;
 }
 
-button{
-color: white;
-background-color: black;
-    border: 1px solid black;
-    border-radius: 15px;
-    font-family: 'clother';
-    font-size: 20px;
-    outline: none;
+
+.button{
+    
     padding: 7px 15px;
+    color: white;
+    background-color: black;
+        border: 1px solid black;
+        border-radius: 15px;
+        font-family: 'clother';
+        font-size: 20px;
+        outline: none;
 }
