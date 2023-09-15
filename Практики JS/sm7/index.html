@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js/main.js" defer></script>
+    
+    <div class="ssilka"><a href="https://github.com/DrxkxnN/js.git">Поехать в париж</a></div>
+    <div class="block_form">
+            <!-- <input type="text" placeholder="Название">
+            <input type="text" placeholder="Ваш текст">
+            <input type="text" placeholder="Ваше имя"> -->
+        <form action="" class="forma" onsubmit="return false">
+            <label for="news_name">Название</label>
+            <input type="text" class="news_name" id="news_name" placeholder="Название"></input>
+            <label for="date" >Дата</label>
+            <input type="date" class="date"  id="date"></input>
+            <label for="author">Автор</label>
+            <input type="text" class="author" placeholder="Ваше имя" id="author"></input>
+            <label for="author">Id пользователя</label>
+            <input type="text" class="idc"  id="id"></input>
+            <label for="news">Текст</label>
+            <textarea cols="30" rows="10" class="news" placeholder="Текст" id="news"></textarea>
+            <button class="add">Создать новость</button>
+
+        </form>
+    </div>
+    <div class="container">
+        <h3 class="title">Новости</h3>
+        <div class="box_list">
+        </div>
+    </div>
+</body>
+</html>
