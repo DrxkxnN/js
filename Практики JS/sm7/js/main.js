@@ -1,4 +1,3 @@
-
 let news = []
 
 let titlename = document.querySelector('.titlename')
