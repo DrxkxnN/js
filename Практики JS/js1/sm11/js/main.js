@@ -62,7 +62,7 @@
             return
         }
         else if (text.length > 300) {
-            error2.innerHTML = 'Текст должен быть не более 300 символов!'
+            error2.innerHTM = 'Текст должен быть не более 300 символов!'
             return
         }
         else{
